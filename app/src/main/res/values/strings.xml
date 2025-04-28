@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Android-crypto-monitor</string>
+    <string name="app_title">Monitor de Criptomoedas - BITCOIN</string>
+    <string name="label_rate">Cotação - BITCOIN</string>
+    <string name="label_value">532,058.15 R$</string>
+    <string name="label_date">17/04/23 13h55</string>
+    <string name="label_refresh">Atualizar</string>
 </resources>
