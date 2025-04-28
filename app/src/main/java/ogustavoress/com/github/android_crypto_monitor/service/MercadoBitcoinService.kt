@@ -1,4 +1,4 @@
-package service
+package ogustavoress.com.github.android_crypto_monitor.service
 
 import model.TicketResponse
 import retrofit2.http.GET
