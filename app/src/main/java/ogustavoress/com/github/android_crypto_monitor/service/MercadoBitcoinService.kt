@@ -1,10 +1,9 @@
 package ogustavoress.com.github.android_crypto_monitor.service
 
-import model.TicketResponse
+import ogustavoress.com.github.android_crypto_monitor.model.TickerResponse
 import retrofit2.http.GET
 
-class MercadoBitcoinService {
-    @GET("api/BTC/ticker")
-    suspend fun getTicker() Response<TickerResponse>{
-    }
+interface MercadoBitcoinService {
+    @GET("api/BTC/ticker/")
+    suspend fun getTicker(): TickerResponse
 }
