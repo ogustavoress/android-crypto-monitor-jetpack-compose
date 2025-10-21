@@ -3,13 +3,13 @@ package ogustavoress.com.github.android_crypto_monitor.service
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class MercadoBitcoinServiceFactory {
+object MercadoBitcoinServiceFactory {
 
     fun create(): MercadoBitcoinService {
-        val retrofit = Retrofit.Builder()
+        return Retrofit.Builder()
             .baseUrl("https://www.mercadobitcoin.net/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-        return retrofit.create(MercadoBitcoinService::class.java)
+            .create(MercadoBitcoinService::class.java)
     }
 }
